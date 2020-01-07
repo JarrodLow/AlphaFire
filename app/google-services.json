@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "511836107282",
+    "firebase_url": "https://alphafire-7fb5e.firebaseio.com",
+    "project_id": "alphafire-7fb5e",
+    "storage_bucket": "alphafire-7fb5e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511836107282:android:0f74e454aff70fed1f5ecb",
+        "android_client_info": {
+          "package_name": "com.example.alphafire"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511836107282-pf7reh2pl66jrg74kpg4lhum5iod9aou.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alphafire",
+            "certificate_hash": "70f5bceb898fe226b55fbcfaab946321713c5683"
+          }
+        },
+        {
+          "client_id": "511836107282-adrhrjftt9oh5572gmc38pj93rdrfldd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoHJkZ411HYO7i0uoW1TvwM0dggfyGN3g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511836107282-adrhrjftt9oh5572gmc38pj93rdrfldd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
