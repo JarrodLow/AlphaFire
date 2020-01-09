@@ -43,6 +43,7 @@ class MainActivity : AppCompatActivity() {
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             }
 
+            //Start from here u implement the adapter
             override fun onDataChange(p0: DataSnapshot) {
                 if(p0!!.exists())
                 {
@@ -53,7 +54,7 @@ class MainActivity : AppCompatActivity() {
                         userList.add(user!!)
                     }
 
-                    val adapter = userAdapter(applicationContext, R.layout.user,userList)
+                    val adapter = userAdapter(this@MainActivity, R.layout.user,userList)
                     listView.adapter = adapter
 
                 }

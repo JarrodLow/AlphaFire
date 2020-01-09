@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">AlphaFire</string>
     <string name="id">Enter ID</string>
+    <string name="login">Enter Id To Login</string>
 </resources>
