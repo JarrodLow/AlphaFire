@@ -19,11 +19,19 @@
         android:text="TextView" />
 
     <TextView
+        android:padding="10dp"
         android:id="@+id/Update"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="update ID"
         android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/testTrue"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="TextView" />
 
 
 </LinearLayout>
