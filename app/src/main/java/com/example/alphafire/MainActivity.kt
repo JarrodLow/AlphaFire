@@ -1,11 +1,18 @@
 package com.example.alphafire
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import com.google.android.gms.auth.api.signin.GoogleSignIn
+import com.google.android.gms.auth.api.signin.GoogleSignInClient
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.firebase.database.*
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var mGoogleSignInClient: GoogleSignInClient
 
     lateinit var  editTextID: EditText
     lateinit var  editTextpw: EditText
@@ -18,13 +25,14 @@ class MainActivity : AppCompatActivity() {
     lateinit var ref:DatabaseReference
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         userList = mutableListOf()
 
-         ref = FirebaseDatabase.getInstance().getReference("user")
+         ref = FirebaseDatabase.getInstance().getReference("users")
 
 
         editTextID = findViewById(R.id.UID)
@@ -32,6 +40,13 @@ class MainActivity : AppCompatActivity() {
         buttonsave = findViewById(R.id.AddBt)
 
         listView = findViewById(R.id.userList)
+
+
+
+
+
+
+
 
         buttonsave.setOnClickListener {
             saveData()
@@ -42,6 +57,7 @@ class MainActivity : AppCompatActivity() {
             override fun onCancelled(p0: DatabaseError) {
                 TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
             }
+
 
             //Start from here u implement the adapter
             override fun onDataChange(p0: DataSnapshot) {

@@ -22,6 +22,7 @@ class userAdapter(val mctx: Context, val layoutResID: Int,val userList: List<use
         val textViewLogin =  view.findViewById<TextView>(R.id.textViewLoginID)
         val textViewPW = view.findViewById<TextView>(R.id.textViewLoginPW)
 
+        //here is the update de part
         val textViewLoginUpdate = view.findViewById<TextView>(R.id.Update)
 
         val user = userList[position]
